@@ -90,20 +90,52 @@ section h3 {
 }
 
 .participants-list {
-  list-style-type: disc;
-  padding-left: 22px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 
 .participants-list li {
-  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e3e7ff;
   color: #424242;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .participants-list li:last-child {
+  border-bottom: none;
   margin-bottom: 0;
+}
+
+.participants-list span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-button {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #c62828;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.participant-remove-button:hover {
+  background-color: rgba(198, 40, 40, 0.1);
+  border-color: #c62828;
 }
 
 .participants-list em {
