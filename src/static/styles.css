@@ -76,40 +76,38 @@ section h3 {
 
 .participants-section {
   margin-top: 15px;
-  padding-top: 15px;
-  border-top: 1px solid #e0e0e0;
+  padding: 15px;
+  border: 1px solid #d6dbf7;
+  border-radius: 8px;
+  background-color: #f4f5ff;
 }
 
 .participants-section strong {
   display: block;
-  margin-bottom: 10px;
-  color: #1a237e;
+  margin-bottom: 12px;
+  color: #283593;
   font-size: 14px;
 }
 
 .participants-list {
-  list-style-type: none;
-  padding-left: 0;
+  list-style-type: disc;
+  padding-left: 22px;
   margin: 0;
 }
 
 .participants-list li {
-  padding: 6px 0 6px 20px;
-  position: relative;
-  color: #555;
+  margin-bottom: 8px;
+  color: #424242;
   font-size: 14px;
+  line-height: 1.5;
 }
 
-.participants-list li:before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #2e7d32;
-  font-weight: bold;
+.participants-list li:last-child {
+  margin-bottom: 0;
 }
 
 .participants-list em {
-  color: #999;
+  color: #757575;
   font-style: italic;
 }
 
